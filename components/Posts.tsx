@@ -9,7 +9,7 @@ function Posts(props: { posts: Post[] }) {
       {props.posts.map((post) => {
         return (
           <>
-            <Link key={post.id} href={`/post/${post.slug.current}`}>
+            <Link key={post._id} href={`/post/${post.slug.current}`}>
               <div className='overflow-hidden border rounded-lg cursor-pointer group'>
                 <img className='object-cover w-full transition-transform duration-200 ease-in-out h-60 group-hover:scale:105' src={urlFor(post.mainImage).url()!} alt="" />
                 <div className='flex justify-between p-5 bg-white'>
